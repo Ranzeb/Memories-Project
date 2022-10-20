@@ -13,7 +13,7 @@ app.use(cors());
 app.use('/posts', postRoutes);
 // https:/www.mongodb.com/cloud/atlas
 
-//const CONNECTION_URL = 'mongodb+srv://Ranzeb:Paiste2002!@cluster0.95wegde.mongodb.net/?retryWrites=true&w=majority';
+const CONNECTION_URL = '<PASTE_YOUR_MONGODB_URL';
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
